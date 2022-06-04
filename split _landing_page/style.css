@@ -44,7 +44,7 @@ h1 {
   justify-content: center;
   font-weight: bold;
   text-transform: uppercase;
-  transition: background-color, border 0.3s ease;
+  transition: background-color, border 0.4s ease;
 }
 .split.left .btn:hover {
   background-color: var(--left-btn-hover-color);
@@ -65,7 +65,7 @@ h1 {
   width: 50%;
   height: 100%;
   overflow: hidden;
-  transition: width 0.4s ease;
+  transition: width 1s ease;
 }
 .split.left {
   left: 0;
@@ -108,4 +108,13 @@ h1 {
 }
 .hover-right .left {
   width: var(--other-width);
+}
+@media (max-width: 800px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  .btn {
+    padding: 1rem;
+    width: 10rem;
+  }
 }
